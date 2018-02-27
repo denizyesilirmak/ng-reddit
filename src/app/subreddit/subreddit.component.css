@@ -1,0 +1,13 @@
+.post-wrapper{
+        min-width: 1280px;
+        width: 1280px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+}
+
+.post-wrapper .post{
+        height: 150px;
+        margin: 5px;
+
+}
