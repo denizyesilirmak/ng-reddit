@@ -13,7 +13,7 @@ export class SubredditComponent implements OnInit {
   posts:any;
 
   getPosts(){
-    this._http.get("https://www.reddit.com/r/worldnews.json").subscribe(data => {
+    this._http.get("https://www.reddit.com/r/pictures.json").subscribe(data => {
       this.posts = data["data"]["children"];
       console.log(this.posts);
     })

@@ -3,7 +3,7 @@
         width: 1280px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: 33% 33% 33%;
+        grid-template-columns: 100%;
 }
 
 .post-wrapper .post{
@@ -11,6 +11,7 @@
         background: #E4E8F3;
         margin: 5px;
         position: relative;
+        border-radius: 10px;
 }
 
 .post-wrapper .post .thumbnail{
@@ -19,12 +20,14 @@
         width: 5em;
         height: 5em;
         margin: 5px;
+        margin-bottom: 35px;
 }
 
 .post-wrapper .post .thumbnail img{
         width: 100%;
         height: 100%;
         border-radius: 10px;
+
 }
 
 .post-wrapper .post .title{
@@ -33,16 +36,30 @@
         font-size: 15px;
 }
 
+.post-wrapper .post .link{
+        font-size: 13px;
+        color: tomato;
+        margin: 5px 5px 50px 5px;
+        word-wrap: break-word;
+}
+
 .post-wrapper .post .footer{
         background: #D9DDE8;
         width: 100%;
-        height: 30px;
+        height: 23px;
         position: absolute;
         bottom: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        text-align: right;
+        font-size: 13px;
 }
 
 @media only screen and (max-width: 500px) {
         .post-wrapper{
-                grid-template-columns: auto;
+                width: 100%;
+                min-width: 100%;
+                grid-template-columns: 100%;
+                
         }
     }

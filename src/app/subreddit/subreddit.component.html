@@ -1,9 +1,9 @@
 <div class="post-wrapper">
   <div class="post" *ngFor="let post of posts">
-    <div class="thumbnail"><img src="https://randomuser.me/api/portraits/med/men/83.jpg" alt="" srcset=""></div>
+    <div class="thumbnail"><img src="{{post.data.thumbnail}}" alt="" srcset=""></div>
     <div class="title">{{post.data.title}}</div>
-    <div class="link">www.loremimpus.com/lorem/impus</div>
-    <div class="footer">asd</div>
+    <div class="link">{{post.data.url}}</div>
+    <div class="footer"><i class="fas fa-thumbs-up"></i>123</div>
   </div>
   <div class="post">
 
