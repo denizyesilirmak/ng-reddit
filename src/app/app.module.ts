@@ -6,6 +6,8 @@ import { SubredditComponent } from './subreddit/subreddit.component';
 
 import { RouterModule, Routes } from '@angular/router';
 
+import { HttpClientModule } from "@angular/common/http";
+
 const appRoutes: Routes = [
   { path: 'r/:subreddit', component: SubredditComponent }
 ];
@@ -17,7 +19,8 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

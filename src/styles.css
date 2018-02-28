@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
 body{
         margin: 0px;
+        background: #CCD0D9;
+        font-family: 'Roboto Condensed', sans-serif;
 }

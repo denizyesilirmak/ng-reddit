@@ -1,7 +1,17 @@
 <div class="post-wrapper">
-  <div class="post"></div>
-  <div class="post"></div>
-  <div class="post"></div>
-  <div class="post"></div>
-  <div class="post"></div>
+  <div class="post" *ngFor="let post of posts">
+    <div class="thumbnail"><img src="https://randomuser.me/api/portraits/med/men/83.jpg" alt="" srcset=""></div>
+    <div class="title">{{post.data.title}}</div>
+    <div class="link">www.loremimpus.com/lorem/impus</div>
+    <div class="footer">asd</div>
+  </div>
+  <div class="post">
+
+  </div>
+  <div class="post">
+
+  </div>
+  <div class="post">
+
+  </div>
 </div>

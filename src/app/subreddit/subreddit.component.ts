@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
+
 
 @Component({
   selector: 'app-subreddit',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubredditComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _http: HttpClient) { }
+  posts:any;
+
+  getPosts(){
+    this._http.get("https://www.reddit.com/r/worldnews.json").subscribe(data => {
+      this.posts = data["data"]["children"];
+      console.log(this.posts);
+    })
+  }
 
   ngOnInit() {
+    this.getPosts();
   }
 
 }
